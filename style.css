@@ -1,0 +1,145 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+}
+
+body {
+    background-color: #ebebeb;
+}
+
+header {
+    padding: 16px 0;
+    color: #ffafcc;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+    text-transform: uppercase;
+    font-style: italic;
+}
+
+form {
+    max-width: max-content;
+    background-color: #cdb4db;
+    padding: 24px 0;
+    text-align: center;
+    display: none;
+    padding: 16px 32px;
+    margin: 0 auto;
+    position: relative;
+    border-radius: 4px;
+}
+
+form h2 {
+    margin-bottom: 16px;
+    color: #fff;
+}
+
+input,
+button {
+    padding: 8px 16px;
+    margin: 4px 0;
+}
+
+input {
+    border: 1px solid #ffafcc;
+    border-radius: 20px;
+    color: #cdb4db;
+}
+
+input:focus {
+    outline-color: #cdb4db;
+}
+
+input::placeholder {
+    color: #ffafcc;
+}
+
+button {
+    background-color: #ffc8dd;
+    border: 2px solid transparent;
+    cursor: pointer;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #fff;
+    width: max-content;
+    border-radius: 20px;
+}
+
+button:hover {
+    border-color: #ffafcc;
+    transform: translateY(1px);
+}
+
+button#fechar {
+    position: absolute;
+    padding: 4px 8px;
+    top: 8px;
+    right: 8px;
+}
+
+button.excluir {
+    background-color: transparent;
+    border: none;
+    color: #ffafcc;
+    width: 18px;
+    height: 12px;
+    padding: 2px 4px;
+    position: relative;
+}
+
+button.excluir::before,
+button.excluir::after {
+    content: '';
+    width: 8px;
+    height: 2px;
+    background-color: #ffafcc;
+    position: absolute;
+    transform:rotate(45deg);
+}
+
+button.excluir::before {
+    transform:rotate(-45deg);
+}
+
+ul {
+    max-width: 600px;
+    margin: auto;
+    padding: 16px;
+}
+
+ul li {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 4px;
+    font-size: 18px;
+    color: #ffafcc;
+    user-select:none;
+    cursor: pointer;
+}
+
+ul li::before {
+    content: '';
+    width: 8px;
+    height: 2px;
+    background-color: #ffafcc;
+}
+
+ul li.checked::before {
+    background-color: #cdb4db;
+}
+
+ul li.checked {
+    text-decoration: line-through;
+    color: #cdb4db;
+}
+
+ul li.checked input {
+    background-color: #cdb4db;
+    color: #cdb4db;
+}
