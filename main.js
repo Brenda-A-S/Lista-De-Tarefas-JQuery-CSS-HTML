@@ -11,23 +11,20 @@ $(document).ready(function () {
         e.preventDefault();
         const nomeNovaTarefa = $('#nome-tarefa').val();
         const novoItem = $(`<li style="display:none">${nomeNovaTarefa}</li>`);
-        $(`
-        <button class='excluir'></button>
-    `).appendTo(novoItem);
-        $(novoItem).appendTo('ul');
-        $(novoItem).fadeIn();
+        $('<button class="excluir"></button>').appendTo(novoItem);
+        novoItem.appendTo('ul');
+        novoItem.fadeIn();
         $('#nome-tarefa').val('');
-        $('li').click(function () {
-            $(this).toggleClass('checked');
-        })
-        $('li button').click(function () {
-            const item = $(this).parent('li');
-            console.log(item);
-            item.fadeOut();
-            
-            setTimeout(function () {
-                item.remove();
-            }, 1000);
-        });
-    })
-})
+    });
+    $('ul').on('click', 'li', function () {
+        $(this).toggleClass('checked');
+    });
+    $('ul').on('click', 'li button', function (e) {
+        e.stopPropagation();
+        const item = $(this).parent('li');
+        item.fadeOut();
+        setTimeout(function () {
+            item.remove();
+        }, 1000);
+    });
+});
