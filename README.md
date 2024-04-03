@@ -7,7 +7,7 @@ Projeto desenvolvido com HTML, CSS e JQuery, durante curso Engenheiro de Front-e
 - JQuery
 
 # Resultado 📌
-![brenda-a-s github io_Lista-De-Tarefas-JQuery-CSS-HTML_](https://github.com/Brenda-A-S/Halloween-site-JavaScript-CSS-HTML/assets/69852246/60075997-48c1-434a-995e-8501a09fc1ca)
+![127 0 0 1_5500_index html](https://github.com/Brenda-A-S/Lista-De-Tarefas-JQuery-CSS-HTML/assets/69852246/0539af41-7e8c-47cb-a38d-0c39fecc0ab5)
 
 # Conecte-se comigo 🔗
 
