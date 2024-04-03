@@ -6,12 +6,12 @@
 }
 
 body {
-    background-color: #ebebeb;
+    background-color: #f5f5f5;
 }
 
 header {
     padding: 16px 0;
-    color: #ffafcc;
+    color: #161616;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -22,11 +22,10 @@ header {
 }
 
 form {
-    max-width: max-content;
-    background-color: #cdb4db;
+    max-width: 500px;
+    background-color: #ecebeb;
     padding: 24px 0;
     text-align: center;
-    display: none;
     padding: 16px 32px;
     margin: 0 auto;
     position: relative;
@@ -35,7 +34,7 @@ form {
 
 form h2 {
     margin-bottom: 16px;
-    color: #fff;
+    color: #1e1e1e;
 }
 
 input,
@@ -45,21 +44,21 @@ button {
 }
 
 input {
-    border: 1px solid #ffafcc;
+    border: 1px solid #161616;
     border-radius: 20px;
-    color: #cdb4db;
+    color: #CCC;
 }
 
 input:focus {
-    outline-color: #cdb4db;
+    outline-color: #d3d3d3;
 }
 
 input::placeholder {
-    color: #ffafcc;
+    color: #161616;
 }
 
 button {
-    background-color: #ffc8dd;
+    background-color: #1E1E1E;
     border: 2px solid transparent;
     cursor: pointer;
     font-weight: bold;
@@ -70,7 +69,7 @@ button {
 }
 
 button:hover {
-    border-color: #ffafcc;
+    border-color: #161616;
     transform: translateY(1px);
 }
 
@@ -84,7 +83,7 @@ button#fechar {
 button.excluir {
     background-color: transparent;
     border: none;
-    color: #ffafcc;
+    color: #161616;
     width: 18px;
     height: 12px;
     padding: 2px 4px;
@@ -96,7 +95,7 @@ button.excluir::after {
     content: '';
     width: 8px;
     height: 2px;
-    background-color: #ffafcc;
+    background-color: #161616;
     position: absolute;
     transform:rotate(45deg);
 }
@@ -106,40 +105,39 @@ button.excluir::before {
 }
 
 ul {
-    max-width: 600px;
+    max-width: 500px;
     margin: auto;
-    padding: 16px;
+    padding: 16px 0;
 }
 
 ul li {
+    max-width: 500px;
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     gap: 4px;
     font-size: 18px;
-    color: #ffafcc;
+    color: #161616;
     user-select:none;
     cursor: pointer;
-}
-
-ul li::before {
-    content: '';
-    width: 8px;
-    height: 2px;
-    background-color: #ffafcc;
-}
-
-ul li.checked::before {
-    background-color: #cdb4db;
+    background: #fff;
+    border-radius: 4px;
+    padding: 8px 16px;
 }
 
 ul li.checked {
     text-decoration: line-through;
-    color: #cdb4db;
+    color: #CCC;
+    opacity: .6;
+}
+
+ul li.checked .excluir {
+    color: #CCC;
+    opacity: .6;
 }
 
 ul li.checked input {
-    background-color: #cdb4db;
-    color: #cdb4db;
+    background-color: #CCC;
+    color: #CCC;
 }

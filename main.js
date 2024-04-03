@@ -7,10 +7,6 @@ $(document).ready(function () {
             form.slideDown();
         }
     });
-    $('#fechar').click(function () {
-        $('form').slideUp();
-    }
-    );
     $('form').on('submit', function (e) {
         e.preventDefault();
         const nomeNovaTarefa = $('#nome-tarefa').val();
